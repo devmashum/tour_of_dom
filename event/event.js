@@ -1,1 +1,9 @@
-console.log('this is a separate js file')
+const purpleButton = document.getElementById('make-purple');
+purpleButton.onclick = makePurple;
+function makePurple() {
+    document.body.style.backgroundColor = 'purple';
+
+
+}
+
+

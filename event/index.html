@@ -14,8 +14,48 @@
 
     <button onclick="console.log(7)">Click me</button><br>
     <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
-    <button>Make red</button>
-    <script src="/event/event.js"></script>
+    <button onclick="makeRed()">Make red</button>
+    <button id="make-blue">make blue</button>
+
+    <button id="make-purple">Make Purple</button>
+    <button id="make-black">Make Black</button>
+    <button id="make-gray">make gray</button>
+
+    <script>
+        const makeGray = document.getElementById('make-gray');
+
+        makeGray.onclick = gray;
+        function gray() {
+            document.body.style.backgroundColor = 'gray';
+        }
+    </script>
+    <script>
+        const makeBlack = document.getElementById("make-black");
+
+        makeBlack.onclick = black;
+        function black() {
+            document.body.style.backgroundColor = 'black';
+        }
+    </script>
+
+    <script>
+    </script>
+    <script src="/event/event.js">
+
+    </script>
+    <script>
+        function makeRed() {
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+    <script>
+        const makeBlueButton
+            = document.getElementById("make-blue");
+        makeBlueButton.onclick = makeBlue;
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+    </script>
 </body>
 
 </html>

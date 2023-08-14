@@ -12,51 +12,20 @@
 
 
 
-    <button onclick="console.log(7)">Click me</button><br>
-    <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
-    <button onclick="makeRed()">Make red</button>
-    <button id="make-blue">make blue</button>
-
-    <button id="make-purple">Make Purple</button>
-    <button id="make-black">Make Black</button>
-    <button id="make-gray">make gray</button>
     <button id="make-pink">make pink</button>
+    <button style="margin-left: 20px;" id="make-goldenrod">make golden</button>
+
+
+
     <script>
-        document.getElementById('make-pink'), addEventListener('click', function () {
-            document.body.style.backgroundColor = 'pink';
+        document.getElementById('make-pink').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'pink'
         }) 
     </script>
-
     <script>
-
-
-    </script>
-    <script>
-        const makeBlack = document.getElementById("make-black");
-
-        makeBlack.onclick = black;
-        function black() {
-            document.body.style.backgroundColor = 'black';
-        }
-    </script>
-
-    <script>
-    </script>
-    <script src="/event/event.js">
-
-    </script>
-    <script>
-        function makeRed() {
-            document.body.style.backgroundColor = 'red';
-        }
-    </script>
-    <script>
-        const makeBlueButton
-            = document.getElementById("make-blue");
-        makeBlueButton.onclick = makeBlue;
-        function makeBlue() {
-            document.body.style.backgroundColor = 'blue';
-        }
+        document.getElementById('make-goldenrod').addEventListener('click', function () {
+            document.body.style.backgroundColor = 'goldenrod'
+        })
     </script>
 </body>
 

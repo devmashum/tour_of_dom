@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM <Summary></Summary>
+    </title>
+</head>
+
+<body>
+    <h1 id="h1-text">FInal DOM Event Handlers</h1>
+    <h1 id="h2-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id magni laborum esse, soluta saepe
+        adipisci ex aspernatur eaque harum sit corporis. At vitae, quidem eos facere tempora nostrum. Dicta.</h1>
+
+    <button onclick="clickButton()">Add onclick function</button>
+
+    <button id="listener">handle addEvendListener</button>
+
+    <script>
+        document.getElementById('listener').addEventListener('click', function () {
+            document.body.innerText = 'red';
+        })
+
+    </script>
+    <!-- <script>
+        function clickButton() {
+            const changeText = document.getElementById('h1-text');
+            changeText.style.color = 'red'
+        }
+
+    </script> -->
+
+
+</body>
+
+</html>

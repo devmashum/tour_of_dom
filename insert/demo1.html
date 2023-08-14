@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        p {
+            font-size: 30px;
+            text-align: center;
+            width: 50%;
+
+            margin-right: 20px;
+        }
+
+        input {
+            width: 20%;
+            height: 30px;
+            background-color: beige;
+            text-align: center;
+        }
+
+        #button {
+            margin-right: 20px;
+        }
+    </style>
+    <title>Demo</title>
+</head>
+
+<body>
+    <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, cupiditate! Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Consectetur repellat expedita voluptatibus eum quo repudiandae fuga esse
+        dolorum quidem, placeat corrupti voluptatum mollitia reprehenderit unde iure in ex explicabo at.</p>
+    <input id="input" type="text">
+    <hr>
+    <button id="button">Click me to change the paragraph</button>
+
+
+    <script>
+        document.getElementById('button').addEventListener('click', function () {
+            const inputText = document.getElementById('input');
+            const paragraphText = inputText.value;
+            const paragraphId = document.getElementById('paragraph');
+            paragraphId.innerText = paragraphText;
+
+
+
+        })
+    </script>
+</body>
+
+</html>
